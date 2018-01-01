@@ -8,7 +8,7 @@ This is the Python implementation of MDS based strategy in CodeNet with soft err
 
 ## Setup
 - Follow the [tutorial](http://mpitutorial.com/tutorials/launching-an-amazon-ec2-mpi-cluster/) to setup the cluster. For the experiments in the paper, 40 m3.medium instances are used.
-- Clone the repo to /home/<username>
+- Clone the repo to /home/\<username\>
 ```bash
 git clone https://github.com/zqbai-jeremy/CodeNet.git
 cd CodeNet
@@ -16,7 +16,7 @@ cd CodeNet
 
 ## Usage
 ```bash
-mpiexec -n <# of processors> python codedDNN_CNN.py <strategy type> <network type> <checkpoint freq> <mode> <train set size> <test set size> <round>
+mpiexec -n \<# of processors\> python codedDNN_CNN.py \<strategy type\> \<network type\> \<checkpoint freq\> \<mode\> \<train set size\> \<test set size\> \<round\>
 ```
 - **\# of processors**: total number of processors used [40 in the paper]
 - **strategy type**: what strategy to use; choose from mds/replica/uncoded
