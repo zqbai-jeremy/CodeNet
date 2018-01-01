@@ -15,8 +15,9 @@ cd CodeNet
 ```
 
 ## Usage
+```bash
 mpiexec -n <# of processors> python codedDNN_CNN.py <strategy type> <network type> <checkpoint freq> <mode> <train set size> <test set size> <round>
-
+```
 - **\# of processors**: total number of processors used [40 in the paper]
 - **strategy type**: what strategy to use; choose from mds/replica/uncoded
 - **network type**: what network to use; currently only "fc"(fully connected) is available
