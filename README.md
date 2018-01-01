@@ -1,6 +1,6 @@
 # CodeNet
 
-This is the Python implementation of MDS based strategy in CodeNet, writen by [Ziqian Bai (Jeremy)](https://github.com/zqbai-jeremy).
+This is the Python implementation of MDS based strategy in CodeNet with soft error simulation, writen by [Ziqian Bai (Jeremy)](https://github.com/zqbai-jeremy).
 
 ## Prerequisites
 - A usable Amazon EC2 account
@@ -8,7 +8,7 @@ This is the Python implementation of MDS based strategy in CodeNet, writen by [Z
 
 ## Setup
 - Follow the [tutorial](http://mpitutorial.com/tutorials/launching-an-amazon-ec2-mpi-cluster/) to setup the cluster. For the experiments in the paper, 40 m3.medium instances are used.
-- Clone the repo
+- Clone the repo to /home/<username>
 ```bash
 git clone https://github.com/zqbai-jeremy/CodeNet.git
 cd CodeNet
