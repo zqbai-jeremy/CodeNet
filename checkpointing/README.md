@@ -1,4 +1,3 @@
-# init
+# checkpointing
 
 Store check-pointing data.
-

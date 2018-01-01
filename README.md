@@ -8,8 +8,13 @@ This is the Python implementation of MDS based strategy in CodeNet with soft err
 
 ## Setup
 - Follow the [tutorial](http://mpitutorial.com/tutorials/launching-an-amazon-ec2-mpi-cluster/) to setup the cluster. For the experiments in the paper, 40 m3.medium instances are used.
+- ssh the master node
+```bash
+starcluster sshmaster <your cluster name>
+```
 - Clone the repo to /home/\<username\>
 ```bash
+cd ../home/<username>
 git clone https://github.com/zqbai-jeremy/CodeNet.git
 cd CodeNet
 ```
@@ -26,3 +31,5 @@ mpiexec -n <# of processors> python codedDNN_CNN.py <strategy type> <network typ
 - **train set size**: number of data instances used for training [2000 in the paper]
 - **test set size**: number of data instances used for testing [500 in the paper]
 - **round**: split the training process to how many rounds (train "train set size"/"round" data instances and test the accuracy at each round); only for -accuracy mode [10 in the paper]
+
+#### Note: mds strategy should be run before replica/uncoded to generate the initial weight matrices. replica/uncoded will load these weight matrices from the disk. (i.e. from ./init/)

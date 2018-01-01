@@ -1,3 +1,3 @@
 # init
 
-Store initialized matrices.
+Store initial weight matrices.
